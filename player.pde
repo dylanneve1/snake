@@ -44,7 +44,6 @@ class Player {
   }
 
   void update() {
-    //println(total + " " + tail.size());
     if (total > 0) {
       if (total == tail.size() && !tail.isEmpty()) {
         tail.remove(0);
