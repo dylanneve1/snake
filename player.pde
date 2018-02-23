@@ -9,6 +9,13 @@ class Player {
   Player() {
   }
 
+  void caller()
+  {
+    death();
+    update();
+    show();
+  }
+
   boolean eat(PVector pos) {
     float d = dist(x, y, pos.x, pos.y);
     if (d < 1) {

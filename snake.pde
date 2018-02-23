@@ -27,9 +27,7 @@ void draw() {
   if (player.eat(food)) {
     pickLocation();
   }
-  player.death();
-  player.update();
-  player.show();
+  player.caller();
 
   fill(255, 0, 100);
   rect(food.x, food.y, scale, scale);
